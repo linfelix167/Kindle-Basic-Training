@@ -9,19 +9,27 @@
 /* Begin PBXBuildFile section */
 		A0864973216316B70031EC03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0864972216316B70031EC03 /* AppDelegate.swift */; };
 		A0864975216316B70031EC03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0864974216316B70031EC03 /* ViewController.swift */; };
-		A0864978216316B70031EC03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0864976216316B70031EC03 /* Main.storyboard */; };
 		A086497A216316B80031EC03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0864979216316B80031EC03 /* Assets.xcassets */; };
 		A086497D216316B80031EC03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A086497B216316B80031EC03 /* LaunchScreen.storyboard */; };
+		A0864985216317180031EC03 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0864984216317180031EC03 /* Book.swift */; };
+		A0864987216317FA0031EC03 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0864986216317FA0031EC03 /* Page.swift */; };
+		A086CA4E21666D4E00D0C83E /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A086CA4D21666D4E00D0C83E /* BookCell.swift */; };
+		A0E9B415216BB52000685C04 /* BookPagerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E9B414216BB52000685C04 /* BookPagerController.swift */; };
+		A0E9B418216BBC0D00685C04 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E9B417216BBC0D00685C04 /* PageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A086496F216316B70031EC03 /* Kindle-Basic-Training.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kindle-Basic-Training.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0864972216316B70031EC03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0864974216316B70031EC03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A0864977216316B70031EC03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A0864979216316B80031EC03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A086497C216316B80031EC03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A086497E216316B80031EC03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0864984216317180031EC03 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		A0864986216317FA0031EC03 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		A086CA4D21666D4E00D0C83E /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
+		A0E9B414216BB52000685C04 /* BookPagerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookPagerController.swift; sourceTree = "<group>"; };
+		A0E9B417216BBC0D00685C04 /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +43,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A06CB5D42167C1160070893C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A0864974216316B70031EC03 /* ViewController.swift */,
+				A0E9B414216BB52000685C04 /* BookPagerController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		A0864966216316B70031EC03 = {
 			isa = PBXGroup;
 			children = (
@@ -54,14 +71,33 @@
 		A0864971216316B70031EC03 /* Kindle-Basic-Training */ = {
 			isa = PBXGroup;
 			children = (
+				A086CA4C216668EB00D0C83E /* Model */,
+				A0E9B416216BBBE300685C04 /* View */,
+				A06CB5D42167C1160070893C /* Controller */,
 				A0864972216316B70031EC03 /* AppDelegate.swift */,
-				A0864974216316B70031EC03 /* ViewController.swift */,
-				A0864976216316B70031EC03 /* Main.storyboard */,
 				A0864979216316B80031EC03 /* Assets.xcassets */,
 				A086497B216316B80031EC03 /* LaunchScreen.storyboard */,
 				A086497E216316B80031EC03 /* Info.plist */,
 			);
 			path = "Kindle-Basic-Training";
+			sourceTree = "<group>";
+		};
+		A086CA4C216668EB00D0C83E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A0864986216317FA0031EC03 /* Page.swift */,
+				A0864984216317180031EC03 /* Book.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A0E9B416216BBBE300685C04 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A086CA4D21666D4E00D0C83E /* BookCell.swift */,
+				A0E9B417216BBC0D00685C04 /* PageCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +160,6 @@
 			files = (
 				A086497D216316B80031EC03 /* LaunchScreen.storyboard in Resources */,
 				A086497A216316B80031EC03 /* Assets.xcassets in Resources */,
-				A0864978216316B70031EC03 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +170,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0E9B415216BB52000685C04 /* BookPagerController.swift in Sources */,
 				A0864975216316B70031EC03 /* ViewController.swift in Sources */,
 				A0864973216316B70031EC03 /* AppDelegate.swift in Sources */,
+				A0864987216317FA0031EC03 /* Page.swift in Sources */,
+				A0864985216317180031EC03 /* Book.swift in Sources */,
+				A086CA4E21666D4E00D0C83E /* BookCell.swift in Sources */,
+				A0E9B418216BBC0D00685C04 /* PageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A0864976216316B70031EC03 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A0864977216316B70031EC03 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A086497B216316B80031EC03 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
